@@ -36,4 +36,3 @@
 | REQ_ID | String | | To indicate each Request and Response |
 
 
-ÒWSÓ - WebSocket H5
