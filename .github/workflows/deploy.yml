@@ -1,0 +1,47 @@
+name: Deploy Docs (Dockerized Build)
+
+on:
+  push:
+    branches:
+      - main # This workflow runs when you push to the 'main' branch
+
+permissions:
+  contents: write # This permission is needed for the deploy action to push to gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # The GitHub-hosted runner that will run Docker commands
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Action to checkout your repository code
+        with:
+          fetch-depth: 0 # Important for Git history if needed by deploy action
+
+      - name: Build MkDocs Site with Docker
+        # This step runs the MkDocs build inside the official squidfunk/mkdocs-material Docker container.
+        run: |
+          # Use 'docker run' to execute MkDocs commands within the container.
+          # -v "${PWD}:/docs": Mounts your entire Git repository (current directory) into the container at /docs.
+          #                   This makes your mkdocs.yml and docs/ folder accessible inside the container.
+          # -v "${PWD}/site:/site": Mounts a local 'site' directory into the container.
+          #                         This is where the 'mkdocs build' command will output its files.
+          #                         The files will appear in your repository's 'site/' folder after this step completes.
+          # --rm: Automatically removes the container after it exits.
+          # squidfunk/mkdocs-material:latest: The Docker image to use for the build.
+          # build --clean --site-dir /site: The MkDocs command executed inside the container.
+          #                                  --site-dir /site tells MkDocs to output to the mounted /site volume.
+          docker run --rm \
+            -v "${PWD}:/docs" \
+            -v "${PWD}/site:/site" \
+            squidfunk/mkdocs-material:latest build --clean --site-dir /site
+
+      - name: Deploy to GitHub Pages
+        # This action takes the 'site/' directory created by the Docker build step
+        # and pushes its contents to your gh-pages branch.
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site # The directory created by the previous Docker build step
+          # publish_branch: gh-pages # Default is gh-pages, you can explicitly set it if needed
+          # cname: example.com # Uncomment and set if you use a custom domain
