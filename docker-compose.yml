@@ -1,0 +1,8 @@
+services:
+  mkdocks:
+    image: squidfunk/mkdocs-material
+    container_name: WebSocketDocs
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/docs
