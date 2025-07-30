@@ -34,7 +34,7 @@ jobs:
           docker run --rm \
             -v "${PWD}:/docs" \
             -v "${PWD}/site:/site" \
-            squidfunk/mkdocs-material:latest build --clean --site-dir /site
+            squidfunk/mkdocs-material build --clean --site-dir /site
 
       - name: Deploy to GitHub Pages
         # This action takes the 'site/' directory created by the Docker build step
