@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://mydomain.org/mysite/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/</loc>
+         <lastmod>2025-07-31</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/websocket/Login_UserManagement/1_login_request/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/websocket/Login_UserManagement/1_login_request/</loc>
+         <lastmod>2025-07-31</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/websocket/Login_UserManagement/2_logout_request/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/websocket/Login_UserManagement/2_logout_request/</loc>
+         <lastmod>2025-07-31</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/websocket/Login_UserManagement/3_change_user_login_password_request/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/websocket/Login_UserManagement/3_change_user_login_password_request/</loc>
+         <lastmod>2025-07-31</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/websocket/Login_UserManagement/4_reset_password_request/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/websocket/Login_UserManagement/4_reset_password_request/</loc>
+         <lastmod>2025-07-31</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/websocket/stock_information_request/stock_information_request/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/websocket/stock_information_request/stock_information_request/</loc>
+         <lastmod>2025-07-31</lastmod>
     </url>
 </urlset>
