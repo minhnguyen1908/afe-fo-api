@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: My site
-site_url: https://mydomain.org/mysite
+site_url: https://minhnguyen1908.github.io/afe-fo-api
 theme:
   name: material
   palette: 
