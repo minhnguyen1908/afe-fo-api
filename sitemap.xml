@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://minhnguyen1908.github.io/afe-fo-api/</loc>
+         <lastmod>2025-08-20</lastmod>
+    </url>
+    <url>
          <loc>https://minhnguyen1908.github.io/afe-fo-api/websocket/Login_UserManagement/1_login_request/</loc>
          <lastmod>2025-08-20</lastmod>
     </url>
