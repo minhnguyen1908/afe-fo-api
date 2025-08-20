@@ -2,8 +2,6 @@
 site_name: Documentation
 site_url: https://minhnguyen1908.github.io/afe-fo-api
 
-nav:
-  - "Home": "docs/websocket/Login_UserManagement/1_login_request.md"
 theme:
   name: material
   palette:
