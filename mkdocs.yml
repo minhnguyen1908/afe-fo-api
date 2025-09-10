@@ -22,7 +22,19 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - content.code.copy
+    - content.code.annotate
     - toc.integrate
+
+nav:
+  - "Home": "index.md"
+  - "1 Login|User Management":
+      - "1.01 Login Request": "websocket/Login_UserManagement/1_login_request.md"
+  - "2 Stock information":
+      - "2.01 Stock information": "websocket/stock_information_request/stock_information_request.md"
+  - "4 Back office related":
+      - "4.01 Cash movement query": "websocket/4_back_office_related_request/01_cash_movement_query_request.md"
+      - "4.02 Account transaction query": "websocket/4_back_office_related_request/02_account_transaction_query.md"
+  - "Appendix": "websocket/appendix.md"
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -31,4 +43,13 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

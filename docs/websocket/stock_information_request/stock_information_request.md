@@ -7,13 +7,12 @@
 ```json
 {
     "Command": "STOCKINFO_QUERY_REQUEST",
-    "LOGIN_ID": "{{login_id}}",
-    "USER_ID": "{{login_id}}",
-    "SESSION_KEY": "{{skey}}",
-    "REQ_ID": "GMAN001",
-    "Channel": "{{channel}}",
-    "Lang": "EN",
-    "ACCOUNT_ID": "011C000020",
+    "LOGIN_ID": "GARY1",
+    "USER_ID": "GARY1",
+    "SESSION_KEY": "aMNj1mmeoazk3stZFYQ!U3pI",
+    "REQ_ID": "TEST001",
+    "Channel": "WU",
+    "Lang": "en",
     "INSTRUMENT_CODE": "HCM"
 }
 ```

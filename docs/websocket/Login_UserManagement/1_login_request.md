@@ -15,15 +15,14 @@ Holding, Order and Trade Response can refer to [7 STREAMING RESPONSE.]()
 
 ```json title="Request message."
 {
-    "Command": "LOGIN_REQUEST",
-    "LOGIN_ID": "ws001",
-    "PASSWORD": "1234",
-    "CHANNEL": "WU",
-    "LANG": "EN",
-    "OTP_CODE": "",
-    "FSEC": "ODU3N2QzZDgtNzQzNS00Mzc5",
-    "MACHINE_MAC_ADDRESS": "02-00-4C-4F-24-50",
-    "CLIENT_IP": "192.168.240.3",
+    "Command": "STOCKINFO_QUERY_REQUEST",
+    "LOGIN_ID": "GARY1",
+    "USER_ID": "GARY1",
+    "SESSION_KEY": "aMNj1mmeoazk3stZFYQ!U3pI",
+    "REQ_ID": "TEST001",
+    "Channel": "WU",
+    "Lang": "en",
+    "INSTRUMENT_CODE": "HCM"
 }
 ```
 ### Field(s) explanation:
